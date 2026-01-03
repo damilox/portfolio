@@ -25,7 +25,7 @@ const projects = [
     title: "DaatHomes",
     description: "A premium real estate marketplace for property discovery and investment. Features include advanced property filtering, an 'Agro-Banking' investment portal, and a responsive listing management system powered by Estatik.",
     tags: ["WordPress", "Estatik Engine", "CSS3", "MySQL"],
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop", 
+    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop", 
     live: "https://daathomes.com/",
 },
 ];
