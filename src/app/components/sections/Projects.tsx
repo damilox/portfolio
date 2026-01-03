@@ -7,28 +7,26 @@ import { FiExternalLink } from "react-icons/fi"; // You might need to install re
 // 1. PROJECTS DATA
 const projects = [
   {
-    title: "EduSpark Dashboard",
-    description: "A comprehensive learning management dashboard for students and teachers. Features real-time grade tracking, assignment submissions, and dark mode.",
-    tags: ["Next.js", "TypeScript", "Tailwind", "Recharts"],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop", // Placeholder
-    github: "#",
-    live: "#",
-  },
-  {
-    title: "MingoolAI",
-    description: "An AI-powered productivity app helping teams organize workflows. I built the frontend components and integrated the real-time collaboration features.",
-    tags: ["React", "Framer Motion", "OpenAI API", "Supabase"],
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2670&auto=format&fit=crop", 
-    github: "#",
-    live: "#",
-  },
-  {
     title: "VisionPlay",
     description: "A premium entertainment discovery platform designed for immersive streaming. Features a cinematic UI, dynamic content categorization, and real-time search functionality for movies and TV shows.",
     tags: ["React", "TMDB API", "Tailwind CSS", "Firebase"],
     image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=2070&auto=format&fit=crop", 
     github: "https://github.com/damilox/netflix-clone",
     live: "https://visionplay-iota.vercel.app/",
+},
+{
+    title: "KidsTechBase",
+    description: "A comprehensive educational platform designed to teach children coding and AI. Built with WordPress, it features course listings, parent testimonials, and a class scheduling system optimized for conversion.",
+    tags: ["WordPress", "CMS Development", "PHP", "SEO"],
+    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2670&auto=format&fit=crop", 
+    live: "https://kidstechbase.net/",
+},
+  {
+    title: "DaatHomes",
+    description: "A premium real estate marketplace for property discovery and investment. Features include advanced property filtering, an 'Agro-Banking' investment portal, and a responsive listing management system powered by Estatik.",
+    tags: ["WordPress", "Estatik Engine", "CSS3", "MySQL"],
+    image: "https://images.unsplash.com/photo-1600596542815-6000255addaf?q=80&w=2076&auto=format&fit=crop", 
+    live: "https://daathomes.com/",
 },
 ];
 
