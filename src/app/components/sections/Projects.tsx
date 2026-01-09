@@ -7,6 +7,14 @@ import { FiExternalLink } from "react-icons/fi"; // You might need to install re
 // 1. PROJECTS DATA
 const projects = [
   {
+    title: "Alpha Tech",
+    description: "The official digital platform for a technology academy. Built to showcase courses, student success stories, and facilitate enrollment with a modern, responsive interface.",
+    tags: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
+    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop", 
+    github: "https://github.com/damilox/alpha-tech-school", 
+    live: "https://alphatech.team", 
+},
+  {
     title: "VisionPlay",
     description: "A premium entertainment discovery platform designed for immersive streaming. Features a cinematic UI, dynamic content categorization, and real-time search functionality for movies and TV shows.",
     tags: ["React", "TMDB API", "Tailwind CSS", "Firebase"],
