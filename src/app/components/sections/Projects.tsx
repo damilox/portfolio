@@ -14,13 +14,13 @@ const projects = [
     github: "https://github.com/damilox/alpha-tech-school", 
     live: "https://alphatech.team", 
 },
-  {
-    title: "VisionPlay",
-    description: "A premium entertainment discovery platform designed for immersive streaming. Features a cinematic UI, dynamic content categorization, and real-time search functionality for movies and TV shows.",
-    tags: ["React", "TMDB API", "Tailwind CSS", "Firebase"],
-    image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=2070&auto=format&fit=crop", 
-    github: "https://github.com/damilox/netflix-clone",
-    live: "https://visionplay-iota.vercel.app/",
+{
+    "title": "StockUp Store",
+    "description": "A specialized e-commerce platform for university students to order market-fresh foodstuffs directly to their hostels. Features a dynamic shopping list, automated WhatsApp order routing, and multi-campus location management.",
+    "tags": ["Next.js 16", "Tailwind v4", "Zustand", "WhatsApp API"],
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop",
+    "github": "https://github.com/damilox/stock-up-store",
+    "live": "https://stockup-store.vercel.app/"
 },
 {
     title: "KidsTechBase",
