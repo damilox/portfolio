@@ -2,9 +2,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { SiGithub } from "react-icons/si";
-import { FiExternalLink } from "react-icons/fi"; // You might need to install react-icons/fi
+import { FiExternalLink } from "react-icons/fi";
 
-// 1. PROJECTS DATA
+// 1. UPDATED PROJECTS DATA (5 Projects Total)
 const projects = [
   {
     title: "Alpha Tech",
@@ -13,29 +13,38 @@ const projects = [
     image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop", 
     github: "https://github.com/damilox/alpha-tech-school", 
     live: "https://alphatech.team", 
-},
-{
-    "title": "StockUp Store",
-    "description": "A specialized e-commerce platform for university students to order market-fresh foodstuffs directly to their hostels. Features a dynamic shopping list, automated WhatsApp order routing, and multi-campus location management.",
-    "tags": ["Next.js 16", "Tailwind v4", "Zustand", "WhatsApp API"],
-    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop",
-    "github": "https://github.com/damilox/stock-up-store",
-    "live": "https://stockup-store.vercel.app/"
-},
-{
+  },
+  {
+    title: "StockUp Store",
+    description: "A specialized e-commerce platform for university students to order market-fresh foodstuffs directly to their hostels. Features a dynamic shopping list and automated WhatsApp order routing.",
+    tags: ["Next.js 16", "Tailwind v4", "Zustand", "WhatsApp API"],
+    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop",
+    github: "https://github.com/damilox/stock-up-store",
+    live: "https://stockup-store.vercel.app/"
+  },
+  // 3. REFRAME DIGITAL (Added here as requested)
+  {
+    title: "Reframe Digital",
+    description: "A high-performance agency website featuring complex scroll animations, a custom lead conversion engine, and a 360° brand showcase system. Built to convert traffic into high-ticket clients.",
+    tags: ["Next.js", "Framer Motion", "TypeScript", "Formspree"],
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop", 
+    github: "https://github.com/damilox/reframe-agency",
+    live: "https://reframe-agency.vercel.app",
+  },
+  {
     title: "KidsTechBase",
     description: "A comprehensive educational platform designed to teach children coding and AI. Built with WordPress, it features course listings, parent testimonials, and a class scheduling system optimized for conversion.",
     tags: ["WordPress", "CMS Development", "PHP", "SEO"],
     image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2670&auto=format&fit=crop", 
     live: "https://kidstechbase.net/",
-},
+  },
   {
     title: "DaatHomes",
     description: "A premium real estate marketplace for property discovery and investment. Features include advanced property filtering, an 'Agro-Banking' investment portal, and a responsive listing management system powered by Estatik.",
     tags: ["WordPress", "Estatik Engine", "CSS3", "MySQL"],
     image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop", 
     live: "https://daathomes.com/",
-},
+  },
 ];
 
 export function Projects() {
@@ -111,14 +120,21 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
 
         {/* Buttons */}
         <div className="flex items-center gap-4 mt-auto">
-          <a
-            href={project.github}
-            className="flex items-center gap-2 text-sm text-white hover:text-blue-400 transition-colors"
-          >
-            <SiGithub className="w-5 h-5" /> Code
-          </a>
+          {/* Only show GitHub button if a link exists */}
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm text-white hover:text-blue-400 transition-colors"
+            >
+              <SiGithub className="w-5 h-5" /> Code
+            </a>
+          )}
           <a
             href={project.live}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 text-sm text-white hover:text-green-400 transition-colors"
           >
             <FiExternalLink className="w-5 h-5" /> Live Demo
