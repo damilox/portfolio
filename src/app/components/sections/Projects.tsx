@@ -4,8 +4,33 @@ import { motion } from "framer-motion";
 import { SiGithub } from "react-icons/si";
 import { FiExternalLink } from "react-icons/fi";
 
-// 1. UPDATED PROJECTS DATA (5 Projects Total)
+// 1. UPDATED PROJECTS DATA (Corrected order & descriptions)
 const projects = [
+  {
+    title: "Miracles Import",
+    description: "A premium e-commerce storefront specializing in luxury watches. Features a sleek, high-end UI to showcase timepieces and a seamless checkout experience for buyers.",
+    tags: ["Next.js", "Tailwind CSS", "E-commerce", "Vercel"],
+    // High-quality luxury watch placeholder
+    image: "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=2080&auto=format&fit=crop", 
+    github: "https://github.com/damilox/miracles-import",
+    live: "https://www.miraclesimport.com/",
+  },
+  {
+    title: "Denvik Travels",
+    description: "A modern travel and tour agency platform. Built to handle booking inquiries, showcase destination packages, and provide a seamless user experience for travelers.",
+    tags: ["Web Development", "UI/UX Design", "Tailwind CSS", "React"],
+    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop", 
+    github: "https://github.com/damilox/denvik-travels",
+    live: "https://denviktravels.ng/",
+  },
+  {
+    title: "Gain Global Church",
+    description: "A comprehensive community platform for Gain Global Church. Features include event schedules, donation portals, and a modern interface to connect the congregation.",
+    tags: ["React", "CMS Integration", "Tailwind CSS", "SEO"],
+    image: "https://images.unsplash.com/photo-1438032005730-c779502df39b?q=80&w=2069&auto=format&fit=crop", 
+    github: "https://github.com/damilox/gain-global-church",
+    live: "https://www.gainglobalchurch.com/",
+  },
   {
     title: "Alpha Tech",
     description: "The official digital platform for a technology academy. Built to showcase courses, student success stories, and facilitate enrollment with a modern, responsive interface.",
@@ -15,21 +40,20 @@ const projects = [
     live: "https://alphatech.team", 
   },
   {
-    title: "StockUp Store",
-    description: "A specialized e-commerce platform for university students to order market-fresh foodstuffs directly to their hostels. Features a dynamic shopping list and automated WhatsApp order routing.",
-    tags: ["Next.js 16", "Tailwind v4", "Zustand", "WhatsApp API"],
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop",
-    github: "https://github.com/damilox/stock-up-store",
-    live: "https://stockup-store.vercel.app/"
-  },
-  // 3. REFRAME DIGITAL (Added here as requested)
-  {
     title: "Reframe Digital",
     description: "A high-performance agency website featuring complex scroll animations, a custom lead conversion engine, and a 360° brand showcase system. Built to convert traffic into high-ticket clients.",
     tags: ["Next.js", "Framer Motion", "TypeScript", "Formspree"],
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop", 
     github: "https://github.com/damilox/reframe-agency",
     live: "https://reframe-agency.vercel.app",
+  },
+  {
+    title: "StockUp Store",
+    description: "A specialized e-commerce platform for university students to order market-fresh foodstuffs directly to their hostels. Features a dynamic shopping list and automated WhatsApp order routing.",
+    tags: ["Next.js 16", "Tailwind v4", "Zustand", "WhatsApp API"],
+    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop",
+    github: "https://github.com/damilox/stock-up-store",
+    live: "https://stockup-store.vercel.app/"
   },
   {
     title: "KidsTechBase",
@@ -39,7 +63,7 @@ const projects = [
     live: "https://kidstechbase.net/",
   },
   {
-    title: "DaatHomes",
+    title: "Daathomes",
     description: "A premium real estate marketplace for property discovery and investment. Features include advanced property filtering, an 'Agro-Banking' investment portal, and a responsive listing management system powered by Estatik.",
     tags: ["WordPress", "Estatik Engine", "CSS3", "MySQL"],
     image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop", 
